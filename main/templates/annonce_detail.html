@@ -1,0 +1,31 @@
+{% block content %}
+
+<div>
+    <h2>Annonce:</h2>
+    <ul>
+        <li>{{object.book}}</li>
+        <li>{{object.publisher}}</li>
+        <li>{{object.publish_date}}</li>
+        <li>{{object.price}}</li>
+        <li>{{object.state}}</li>
+    </ul>
+    <br>
+</div>
+
+<br>
+
+<div>
+    <h2>Book description:</h2>
+    <ul>
+        <li>{{object.book.title}}</li>
+        <li>{{object.book.author}} </li>
+        <li> {{object.book.description}}}</li>
+        <li>{{object.book.genre}} </li>
+        <li>{{object.book.publish_year}}</li>
+    </ul>
+    <br>
+</div>
+
+
+
+{% endblock content %}

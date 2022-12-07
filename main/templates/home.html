@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  {% for obj in annonce %}
+<div>
+    <ul>
+        <li><a href='annonce_list/{{obj.id}}/'> {{obj.book}}</li>
+        <li>{{obj.publisher}}</li>
+        <li>{{obj.publish_date}}</li>
+        <li>{{obj.price}}</li>
+        <li>{{obj.state}}</li>
+    </ul>
+    <br>
+</div>
+  
+  {{obj.book}}
+{% endfor %}
+
+{% endblock content %}
